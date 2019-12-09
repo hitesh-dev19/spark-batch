@@ -30,9 +30,6 @@ public class App
 		data.show();
 		
 		data.printSchema();
-		//System.out.println("count of data ::" + data.count());
-		
-		//sqlContext.createExternalTable("parquet", "C:\\Users\\Pratik Joshi\\Desktop\\spark\\outputTable");
 		data.write().mode("overwrite"). partitionBy("country"). parquet("file:///tmp/spark/output");
 		data.write().format("parquet").mode("overwrite").  save   ("file:///tmp/spark/sampleFileParque");
 		data.write().saveAsTable("sample");
@@ -42,15 +39,7 @@ public class App
 		System.out.println(sql.count());
 		
 		
-		/*
-		data.write().format("com.databricks.spark.avro").mode("overwrite") .save("C:\\Users\\Pratik Joshi\\Desktop\\spark\\outputAvro");
-		
-		Dataset<Row> load = session.read().format("com.databricks.spark.avro").load("C:\\Users\\Pratik Joshi\\Desktop\\spark\\outputAvro");
-		load.filter("id>2000").write().format("com.databricks.spark.avro").saveAsTable("avroTable");
-		
-		Dataset<Row> sql2 = sqlContext.sql("select * from avroTable");
-		
-		System.out.println("avro: "+sql2.count());*/
+	
 		
     }
 }
