@@ -12,11 +12,11 @@ public class CommonConstants {
 	
 	public static String FILE_NAME = "Summary of Weather.csv";
 	
-	public static String FILE_PATH = "C:\\Users\\Pratik Joshi\\Desktop\\spark\\Summary of Weather.csv";
+	public static String FILE_PATH = "C:\\Users\\Hitesh\\Desktop\\spark\\Summary of Weather.csv";
 	
 	public static String BUCKET_FILE_PATH = "inputFiles/Summary of Weather.csv";
 	
-	public static String LOCAL_DOWNLOAD_PATH = "C:\\\\Users\\\\Pratik Joshi\\\\Desktop\\\\Invoice_May_new.pdf";
+	public static String LOCAL_DOWNLOAD_PATH = "C:\\\\Users\\\\Hitesh\\\\Desktop\\\\Invoice_May_new.pdf";
 	
 	public static final String SUFFIX = "/";
 	
